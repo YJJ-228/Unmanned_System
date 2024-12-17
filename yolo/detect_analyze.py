@@ -1,10 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data_dir = r"runs\classify\train\results.csv"
+detect_data_dir = r"runs\detect\train\results.csv"
 
 # yolo
-df = pd.read_csv(data_dir)
+df = pd.read_csv(detect_data_dir)
 
 # 遍历DataFrame的每一列
 for column in df.iloc[:, 2:]:
@@ -25,7 +25,7 @@ plt.show()
 
 
 # 准确率视图
-plt.plot(df.index, df["metrics/accuracy_top5"], label="metrics/accuracy_top5")
+plt.plot(df.index, df["metrics/precision(B)"], label="metrics/precision(B)")
 # 添加图例
 plt.legend()
 
