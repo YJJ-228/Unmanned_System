@@ -1,8 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+data_dir = r"runs\classify\train\results.csv"
+
 # yolo
-df = pd.read_csv(r"runs\classify\train\results.csv")
+df = pd.read_csv(data_dir)
 
 # 遍历DataFrame的每一列
 for column in df.iloc[:, 2:]:
