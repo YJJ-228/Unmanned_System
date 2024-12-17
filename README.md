@@ -12,4 +12,4 @@
 - `check.ipynb` : 应用训练完的模型检测img中图片类别  
 
 说明： 本实验对于分类模型统一使用[cifar10](https://github.com/ultralytics/assets/releases/download/v0.0.0/cifar10.zip)数据集，对于detect模型则使用[coco128](https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128.zip)进行训练。  
-关于后续：不会做大幅改动了，可能会用不同的数据集再测试一下
+关于后续：不会做大幅改动了，可能会用不同的数据集再测试一下。
